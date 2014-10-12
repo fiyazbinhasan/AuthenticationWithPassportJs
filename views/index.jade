@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1(class='text-center text-info') Here goes the home page
+  div(style='margin-top:30px;')
+      div(class='col-md-1 col-md-offset-5')
+        a(href='/login',class='btn btn-default btn-lg') Log in
+      div(class='col-md-1')
+        a(href='/signup',class='btn btn-primary btn-lg') Sign up
